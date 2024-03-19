@@ -1,0 +1,114 @@
+h1{
+    text-align: center;
+    margin: 0px;
+}
+.pfp{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+}
+
+.wholePage { 
+    display: grid;
+    grid-template-areas: 
+      "L nav R"
+      "L title R"
+      "L link R"
+      "L social R"
+      "L current R";
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 2em min-content 3em 3em min-content; 
+    height: 150vh;
+    margin: 0;
+    background-color: rgb(15, 11, 11);
+    }  
+
+.pageNav {
+    grid-area: nav;
+    background-color: red;
+    display: flex;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    justify-content: center;
+    }
+.pageNav {
+    overflow: hidden;
+    background-color: rgb(27, 20, 20);
+    }
+      
+.pageNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+.pageNav a:hover {
+    background-color: #b0d3a9;
+    color: black;
+    }
+
+
+
+.pageTitle {
+    grid-area: title;
+    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+        "titlePFP titleName titleJob";
+    grid-template-columns: 30% 30% 40%;
+    }
+.titlePFP{
+    grid-area: titlePFP;
+    background-color: rgb(0, 102, 255);
+}
+.titleName{
+    grid-area: titleName;
+    background-color: rgb(29, 89, 167);
+}
+.titleJob{
+    grid-area: titleJob;
+    background-color: rgb(46, 50, 75);
+}
+
+
+.pageLink { 
+    grid-area: link;   
+    background-color: green;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.pageSocial { 
+    grid-area: social; 
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.pageCurrent { 
+    grid-area: current; 
+    background-color: purple;
+    display: grid;
+    grid-template-areas: 
+        "currentList currentSlideshow";
+    grid-template-columns: 50% 50%;
+    } 
+
+.currentList{
+    grid-area: currentList;
+    background-color: rgb(236, 122, 208);
+}
+
+.currentSlideshow{
+    grid-area: currentSlideshow;
+    background-color: rgb(236, 122, 122);
+}
+
+.WIPslides{
+    width: 100%;
+    height: 100%;
+}
