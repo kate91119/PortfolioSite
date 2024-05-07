@@ -1,0 +1,25 @@
+h2{
+    text-align: center;
+    margin: 0px;
+}
+.pfp{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+}
+
+.AboutPage { 
+    display: grid;
+    grid-template-areas: 
+    "L body R";
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: min-content min-content min-content min-content; 
+    height: auto;
+    margin: 0;
+    background-color: rgb(15, 11, 11);
+    }   
+
+    .AboutBox{
+        grid-area: body;
+        padding: 2em;
+    }

@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+    margin: 0px;
+}
+.pfp{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+}
+
+.ContactPage { 
+    display: grid;
+    grid-template-areas: 
+    "L body email R";
+    grid-template-columns: 15% auto auto 15%;
+    grid-template-rows: min-content min-content min-content min-content; 
+    height: 20em;
+    margin: 0;
+    background-color: rgb(15, 11, 11);
+    }   
+
+
+.contact_info{
+    grid-area: body;
+    padding-left: 2em;
+    padding-top: 2em;
+}    
+.email{
+    grid-area: email;
+    padding-right: 2em;
+}

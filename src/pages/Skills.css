@@ -1,0 +1,85 @@
+h1{
+    text-align: center;
+    margin: 0px;
+}
+.pfp{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+}
+
+.SkillsDisplay { 
+    display: grid;
+    grid-template-areas: 
+    "L nav R"
+    "L title R"
+    "L link R"
+    "L social R";
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: min-content min-content min-content min-content; 
+    height: auto;
+    margin: 0;
+    background-color: rgb(15, 11, 11);
+    }   
+
+.SkillsButtons {
+    grid-area: nav;
+    display: flex;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    justify-content: center;
+    }
+
+.skills-buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 200px;
+    width: 200px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.pageNav {
+    overflow: hidden;
+    background-color: rgb(27, 20, 20);
+    }
+      
+.pageNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+.pageNav a:hover {
+    background-color: #b0d3a9;
+    color: black;
+    }
+
+
+.Title {
+    grid-area: title;
+    text-align: center;
+    }
+
+.SkillContent { 
+    grid-area: social; 
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+        "SkillsList SkillsSlides";
+    grid-template-columns: 50% 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+
